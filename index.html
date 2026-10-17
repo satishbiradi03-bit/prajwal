@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurcumaMaster | Precision 1-Acre Turmeric Agronomy & Profitability Suite</title>
+  <meta name="description" content="Scientific 1-acre turmeric cultivation system based on ICAR-IISR Kozhikode and Karnataka Agricultural Universities. Realistic yield models, drip fertigation, IPDM, and live financial simulator.">
+  <meta name="keywords" content="turmeric farming, 1 acre turmeric yield, ICAR IISR Pragati, drip fertigation turmeric, Karnataka turmeric cultivation, turmeric profit calculator">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light">
+  <!-- Top Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <div class="brand-logo">
+        <span class="logo-icon">🌿</span>
+        <div class="brand-text">
+          <span class="brand-title">Curcuma<span class="highlight-gold">Master</span></span>
+          <span class="brand-sub">ICAR-IISR & UAS Standard Agronomy</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#feasibility" class="nav-link">Yield Feasibility</a>
+        <a href="#varieties" class="nav-link">Varieties</a>
+        <a href="#soil-seed" class="nav-link">Soil & Seed</a>
+        <a href="#fertigation" class="nav-link">Drip & Nutrition</a>
+        <a href="#calendar" class="nav-link">Calendar</a>
+        <a href="#ipdm" class="nav-link">Pest & Disease</a>
+        <a href="#profit-calculator" class="nav-link nav-btn-cta">Profit Simulator</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="print-plan-btn" class="btn-outline-sm" title="Print or Save Blueprint">
+          <span>🖨️ Print Blueprint</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span> Karnataka & South India Agro-Climatic Suite
+        </div>
+        <h1 class="hero-title">
+          Scientific 1-Acre <span class="gradient-text">Turmeric Cultivation</span> & Profit Blueprint
+        </h1>
+        <p class="hero-subtitle">
+          Engineered on research standards from <strong>ICAR-IISR Kozhikode</strong>, <strong>UAS Bengaluru/Dharwad</strong>, and <strong>KAU</strong>. Replace unscientific yield myths with data-driven soil engineering, precision drip fertigation, and real-time financial simulation.
+        </p>
+
+        <div class="hero-metrics-strip">
+          <div class="metric-card">
+            <span class="metric-label">Max Realistic Yield</span>
+            <span class="metric-val text-gold">12 – 16 t<span class="unit">/acre</span></span>
+            <span class="metric-hint">120 – 160 quintals fresh</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Dry Recovery</span>
+            <span class="metric-val text-green">18% – 22%</span>
+            <span class="metric-hint">22 – 32 q cured dry finger</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Target Curcumin</span>
+            <span class="metric-val text-orange">5.0% – 6.5%</span>
+            <span class="metric-hint">IISR Pragati / Prabha</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Target Net Profit</span>
+            <span class="metric-val text-emerald">₹1.4L – ₹2.9L</span>
+            <span class="metric-hint">Per acre net return</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#profit-calculator" class="btn-primary">
+            <span>Launch Profit Simulator</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="#feasibility" class="btn-secondary">
+            <span>Explore Yield Science</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="image-frame">
+          <img src="assets/turmeric_hero.jpg" alt="High yield turmeric crop on raised beds with drip irrigation in Karnataka" class="hero-img">
+          <div class="image-floating-badge">
+            <span class="badge-icon">💧</span>
+            <div>
+              <strong>Broad Raised Bed (BBF) + Drip</strong>
+              <p>40% water saving • Zero rhizome rot pooling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <!-- 1. Yield Feasibility & Biological Limits -->
+    <section id="feasibility" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 01</span>
+        <h2>Scientific Yield Benchmarks: 4 Tonnes Baseline vs 12–16 Tonnes Precision Target</h2>
+        <p class="section-desc">Comparing conventional rain-fed 4-tonne (4,000 kg) baselines against precision drip-fertigated raised-bed production in Karnataka.</p>
+      </div>
+
+      <div class="reality-grid">
+        <div class="reality-card baseline-card">
+          <div class="card-status-badge badge-baseline">Conventional Baseline</div>
+          <h3>4 Tonnes (4,000 kg) / Acre</h3>
+          <p class="big-sub">40 Quintals/Acre (~10 Tonnes/Hectare)</p>
+          <ul class="baseline-points">
+            <li>
+              <strong>Rain-fed & Flat Ridge Benchmark:</strong> The prevailing baseline yield across Karnataka for unfertilized, rain-dependent or traditional flood-furrow farming without bio-inoculants.
+            </li>
+            <li>
+              <strong>Subterranean Clump Mass:</strong> At 4,000 kg with ~28,000 plants/acre, each clump averages only <strong>0.14 kg</strong> due to root-zone compaction and moisture fluctuations.
+            </li>
+            <li>
+              <strong>Nutrient & Soil Limitations:</strong> Traditional broadcast fertilizer suffers up to 50% leaching and volatilization, restricting primary and secondary finger branching.
+            </li>
+            <li>
+              <strong>Cured Dry Output:</strong> At 18% dry recovery, 4 tonnes fresh produces approximately <strong>720 kg (7.2 quintals)</strong> of cured fingers, returning minimal net profit.
+            </li>
+          </ul>
+        </div>
+
+        <div class="reality-card truth-card">
+          <div class="card-status-badge badge-success">Scientifically Feasible</div>
+          <h3>Realistic Benchmarks</h3>
+          <p class="big-sub">Karnataka & South India (ICAR-IISR Validated)</p>
+          <div class="benchmark-bars">
+            <div class="benchmark-row">
+              <div class="bench-label">
+                <span>Baseline Conventional (Rain-fed)</span>
+                <strong>4.0 t/acre (40 q)</strong>
+              </div>
+              <div class="bench-progress"><div class="bar-fill" style="width: 25%;"></div></div>
+            </div>
+
+            <div class="benchmark-row">
+              <div class="bench-label">
+                <span>Good Farm Management (Flood/Furrow)</span>
+                <strong>8.0 – 10.0 t/acre (80–100 q)</strong>
+              </div>
+              <div class="bench-progress"><div class="bar-fill" style="width: 55%;"></div></div>
+            </div>
+
+            <div class="benchmark-row">
+              <div class="bench-label">
+                <span>Precision Drip + INM (High Target)</span>
+                <strong>10.0 – 12.5 t/acre (100–125 q)</strong>
+              </div>
+              <div class="bench-progress"><div class="bar-fill highlight" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="benchmark-row">
+              <div class="bench-label">
+                <span>Elite Record Plot (Poly-Mulch + Fertigation)</span>
+                <strong>13.0 – 16.0 t/acre (130–160 q)</strong>
+              </div>
+              <div class="bench-progress"><div class="bar-fill elite" style="width: 95%;"></div></div>
+            </div>
+          </div>
+          <div class="dry-recovery-callout">
+            <span class="callout-icon">ℹ️</span>
+            <div>
+              <strong>Fresh vs Dry Conversion (18% - 22% Recovery):</strong>
+              <p>12 tonnes fresh turmeric yield produces <strong>2.16 to 2.64 tonnes (21.6 to 26.4 quintals)</strong> of cured, sun-dried commercial turmeric fingers at 8–10% moisture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Biophysical Comparison Slider -->
+      <div class="interactive-panel card-glass">
+        <div class="panel-header">
+          <h3>🔬 Interactive Biophysical Soil & Clump Simulator</h3>
+          <p>Drag the target yield to observe the mathematical clump weight and physical underground density required.</p>
+        </div>
+        <div class="slider-control-box">
+          <div class="slider-label-row">
+            <span>Target Fresh Yield (kg / Acre):</span>
+            <span id="bio-yield-display" class="slider-val-badge">12,000 kg (12 t)</span>
+          </div>
+          <input type="range" id="bio-yield-slider" min="4000" max="18000" step="500" value="12000" class="custom-range">
+          <div class="slider-scale">
+            <span>4,000 kg (4 t - Baseline)</span>
+            <span>8,000 kg (8 t - Moderate)</span>
+            <span>12,000 kg (12 t - Optimal Target)</span>
+            <span>16,000 kg (16 t - Elite Plot)</span>
+            <span>18,000 kg (18 t - Max Potential)</span>
+          </div>
+        </div>
+
+        <div class="bio-results-grid">
+          <div class="bio-stat">
+            <span class="stat-title">Required Clump Weight</span>
+            <span id="clump-wt-display" class="stat-number text-gold">0.43 kg</span>
+            <span id="clump-wt-status" class="stat-verdict verdict-pass">✓ Scientifically Feasible</span>
+          </div>
+          <div class="bio-stat">
+            <span class="stat-title">Underground Density</span>
+            <span id="density-display" class="stat-number text-orange">2.97 kg/m²</span>
+            <span class="stat-hint">Pore aeration safe (>40%)</span>
+          </div>
+          <div class="bio-stat">
+            <span class="stat-title">Expected Cured Dry Yield</span>
+            <span id="bio-dry-display" class="stat-number text-emerald">22.8 Quintals</span>
+            <span class="stat-hint">Assumes 19% recovery</span>
+          </div>
+          <div class="bio-stat">
+            <span class="stat-title">Feasibility Assessment</span>
+            <span id="bio-assessment" class="stat-number text-green">High Success</span>
+            <span id="bio-assessment-desc" class="stat-hint">Standard optimal yield for Karnataka drip farms.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Variety Selection -->
+    <section id="varieties" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 02</span>
+        <h2>Elite Cultivar Selection & Trade-Off Matrix</h2>
+        <p class="section-desc">Compare ICAR-IISR Kozhikode high-yielding cultivars versus traditional commercial varieties for Karnataka.</p>
+      </div>
+
+      <div class="variety-tabs">
+        <button class="variety-tab active" data-variety="pragati">IISR Pragati (Recommended)</button>
+        <button class="variety-tab" data-variety="prabha">IISR Prabha (High Curcumin)</button>
+        <button class="variety-tab" data-variety="supreme">IISR Alleppey Supreme</button>
+        <button class="variety-tab" data-variety="salem">Salem / Erode Local</button>
+      </div>
+
+      <div class="variety-detail-card card-glass" id="variety-card">
+        <!-- Dynamically Populated by JS -->
+      </div>
+    </section>
+
+    <!-- 3. Soil & Seed Rhizome Engineering -->
+    <section id="soil-seed" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 03</span>
+        <h2>Site Engineering, Bed Geometry & Seed Rhizome Plan</h2>
+        <p class="section-desc">Broad Raised Bed (BBF) engineering to eliminate waterlogging and scientific seed pre-treatment protocol.</p>
+      </div>
+
+      <div class="two-column-layout">
+        <!-- Bed Engineering -->
+        <div class="info-card card-glass">
+          <div class="card-icon-header">
+            <span class="icon-bubble">📐</span>
+            <h3>Broad Raised Bed (BBF) Specifications</h3>
+          </div>
+          <div class="bed-diagram-container">
+            <div class="bed-visual">
+              <div class="bed-top">
+                <span>120 cm (4.0 ft) Top Width</span>
+                <div class="row-indicators">
+                  <span class="plant-dot" title="Row 1">●</span>
+                  <span class="plant-dot" title="Row 2">●</span>
+                  <span class="plant-dot" title="Row 3">●</span>
+                </div>
+              </div>
+              <div class="bed-slopes">
+                <span class="slope-text">Height: 25–30 cm</span>
+              </div>
+              <div class="furrow-visual">
+                <span>30 cm Furrow / Pathway (Rapid Monsoon Runoff)</span>
+              </div>
+            </div>
+          </div>
+          <ul class="spec-list">
+            <li><strong>Bed Spacing:</strong> 150 cm (5.0 ft) center-to-center.</li>
+            <li><strong>Plant Grid on Bed:</strong> 3 rows per bed, spaced 35 cm row-to-row × 20 cm plant-to-plant.</li>
+            <li><strong>Total Beds / Acre:</strong> ~22 to 24 beds of 100 meters length.</li>
+            <li><strong>Plant Density:</strong> <strong>28,000 – 30,000 plants per acre</strong>.</li>
+            <li><strong>Monsoon Safety:</strong> Raised profile keeps developing rhizomes 25 cm above standing furrow water.</li>
+          </ul>
+        </div>
+
+        <!-- Seed Rhizome Calculator -->
+        <div class="info-card card-glass">
+          <div class="card-icon-header">
+            <span class="icon-bubble">🥔</span>
+            <h3>Interactive 1-Acre Seed Calculator</h3>
+          </div>
+          
+          <div class="calc-form">
+            <div class="form-group">
+              <label for="seed-type-select">Rhizome Type Selection:</label>
+              <select id="seed-type-select" class="custom-select">
+                <option value="mother" selected>Mother Rhizomes (35–45g) - Highest Vigor (+12% Yield)</option>
+                <option value="finger">Primary Finger Rhizomes (25–30g) - Standard Commercial</option>
+                <option value="mix">50:50 Mother & Primary Finger Blend</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="spacing-select">Bed Planting Geometry:</label>
+              <select id="spacing-select" class="custom-select">
+                <option value="standard" selected>3 Rows/Bed @ 35 x 20 cm (~28,500 plants/acre)</option>
+                <option value="high">3 Rows/Bed @ 30 x 20 cm (~32,000 plants/acre)</option>
+                <option value="wide">2 Rows/Bed @ 45 x 20 cm (~22,000 plants/acre)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="seed-rate-price">Assumed Seed Purchase Price (₹/kg):</label>
+              <input type="number" id="seed-rate-price" value="45" min="25" max="80" class="custom-input">
+            </div>
+
+            <div class="seed-output-box">
+              <div class="seed-stat-line">
+                <span>Calculated Seed Required:</span>
+                <strong id="seed-total-kg" class="text-gold">855 kg (8.55 q)</strong>
+              </div>
+              <div class="seed-stat-line">
+                <span>50 kg Gunny Bags Needed:</span>
+                <strong id="seed-bags">18 Bags</strong>
+              </div>
+              <div class="seed-stat-line">
+                <span>Estimated Seed Investment:</span>
+                <strong id="seed-total-cost" class="text-emerald">₹38,475</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="treatment-pill-box">
+            <h4>Mandatory Pre-Plant Treatment Protocol:</h4>
+            <p><strong>Chemical:</strong> Metalaxyl-M 4% + Mancozeb 64% (2.5 g/L) + Quinalphos (2 mL/L) for 30 mins; shade dry 24h.</p>
+            <p><strong>Biological:</strong> <em>Trichoderma harzianum</em> (10 g/kg) + <em>Pseudomonas</em> (10 g/kg) slurry dip for 45 mins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Precision Drip & Fertigation Plan -->
+    <section id="fertigation" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 04</span>
+        <h2>Precision Drip & Water-Soluble Fertigation Engine</h2>
+        <p class="section-desc">Stage-wise water application and N-P-K-Secondary nutrient injection through drip irrigation.</p>
+      </div>
+
+      <div class="drip-specs-strip">
+        <div class="drip-spec-item">
+          <span class="spec-k">Laterals / Bed</span>
+          <span class="spec-v">2 Lines (16mm)</span>
+          <span class="spec-s">Class II Inline</span>
+        </div>
+        <div class="drip-spec-item">
+          <span class="spec-k">Dripper Spacing</span>
+          <span class="spec-v">40 cm</span>
+          <span class="spec-s">2.0 LPH Discharge</span>
+        </div>
+        <div class="drip-spec-item">
+          <span class="spec-k">Total Acre Delivery</span>
+          <span class="spec-v">~27,000 L/hr</span>
+          <span class="spec-s">At 1.2 bar pressure</span>
+        </div>
+        <div class="drip-spec-item">
+          <span class="spec-k">Seasonal Water</span>
+          <span class="spec-v">7.5 Lakh Litres</span>
+          <span class="spec-s">40% saving vs flood</span>
+        </div>
+      </div>
+
+      <!-- Interactive Fertigation Stage Viewer -->
+      <div class="fert-container card-glass">
+        <div class="fert-tabs" id="fert-tabs">
+          <button class="fert-tab-btn active" data-stage="1">Stage 1: 0–30 DAP</button>
+          <button class="fert-tab-btn" data-stage="2">Stage 2: 31–60 DAP</button>
+          <button class="fert-tab-btn" data-stage="3">Stage 3: 61–90 DAP</button>
+          <button class="fert-tab-btn" data-stage="4">Stage 4: 91–135 DAP</button>
+          <button class="fert-tab-btn" data-stage="5">Stage 5: 136–180 DAP</button>
+          <button class="fert-tab-btn" data-stage="6">Stage 6: 181–210 DAP</button>
+        </div>
+
+        <div class="fert-details-view" id="fert-details-view">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="basal-reminder-box">
+          <div class="reminder-icon">⚠️</div>
+          <div class="reminder-text">
+            <strong>Mandatory Pre-Planting Basal Dose (Do not apply via drip):</strong>
+            <p>10 Tonnes Well-cured FYM + 250 kg Neem Cake + 150 kg Single Super Phosphate (SSP) + 25 kg MOP + 10 kg Zinc Sulphate + 5 kg Ferrous Sulphate + 3 kg Borax thoroughly incorporated into bed topsoil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Month-by-Month Calendar -->
+    <section id="calendar" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 05</span>
+        <h2>Interactive Month-by-Month Farm Operations Calendar</h2>
+        <p class="section-desc">From April pre-monsoon green manuring to February post-harvest steam curing.</p>
+      </div>
+
+      <div class="calendar-controls">
+        <div class="calendar-filter-group">
+          <button class="filter-btn active" data-filter="all">All Months</button>
+          <button class="filter-btn" data-filter="planting">Planting (May–Jun)</button>
+          <button class="filter-btn" data-filter="vegetative">Vegetative (Jul–Sep)</button>
+          <button class="filter-btn" data-filter="bulking">Bulking (Oct–Dec)</button>
+          <button class="filter-btn" data-filter="harvest">Harvest & Curing (Jan–Feb)</button>
+        </div>
+      </div>
+
+      <div class="calendar-timeline" id="calendar-timeline">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 6. IPDM (Pest & Disease Management) -->
+    <section id="ipdm" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 06</span>
+        <h2>Integrated Pest & Disease Diagnostic Guide (IPDM)</h2>
+        <p class="section-desc">Diagnostic identification, cultural prevention, biological remedies, and safe chemical backup.</p>
+      </div>
+
+      <div class="ipdm-grid" id="ipdm-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 7. Comprehensive Profitability & Budget Simulator -->
+    <section id="profit-calculator" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 07</span>
+        <h2>1-Acre Commercial Budget & Net Profit Simulator</h2>
+        <p class="section-desc">Simulate realistic revenues across fresh sales, dry cured fingers, and value-added packaged turmeric powder.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <!-- Input Controls -->
+        <div class="calc-panel-inputs card-glass">
+          <h3>Simulation Variables</h3>
+
+          <div class="calc-input-row">
+            <div class="input-head">
+              <label for="sim-yield">Fresh Harvested Yield (Tonnes / Acre):</label>
+              <span id="disp-sim-yield" class="val-tag">12.0 t (120 q)</span>
+            </div>
+            <input type="range" id="sim-yield" min="6.0" max="17.0" step="0.5" value="12.0" class="custom-range">
+            <div class="range-marks">
+              <span>6 t (Loss)</span>
+              <span>10 t (Avg)</span>
+              <span>12 t (Target)</span>
+              <span>16 t (Record)</span>
+            </div>
+          </div>
+
+          <div class="calc-input-row">
+            <div class="input-head">
+              <label for="sim-recovery">Dry Recovery Percentage (%):</label>
+              <span id="disp-sim-recovery" class="val-tag">19.0%</span>
+            </div>
+            <input type="range" id="sim-recovery" min="16.0" max="22.0" step="0.5" value="19.0" class="custom-range">
+            <div class="range-marks">
+              <span>16% (Early/Wet)</span>
+              <span>19% (Standard)</span>
+              <span>22% (Late Supreme)</span>
+            </div>
+          </div>
+
+          <div class="calc-input-row">
+            <div class="input-head">
+              <label for="sim-dry-price">Dry Finger APMC Selling Price (₹ / Quintal):</label>
+              <span id="disp-sim-dry-price" class="val-tag">₹13,500/q</span>
+            </div>
+            <input type="range" id="sim-dry-price" min="8000" max="18000" step="500" value="13500" class="custom-range">
+            <div class="range-marks">
+              <span>₹8,000 (Bear)</span>
+              <span>₹13,500 (Current)</span>
+              <span>₹18,000 (Bull/Premium)</span>
+            </div>
+          </div>
+
+          <div class="calc-input-row">
+            <div class="input-head">
+              <label for="sim-fresh-price">Fresh Rhizome Farmgate Price (₹ / kg):</label>
+              <span id="disp-sim-fresh-price" class="val-tag">₹22/kg</span>
+            </div>
+            <input type="range" id="sim-fresh-price" min="14" max="32" step="1" value="22" class="custom-range">
+          </div>
+
+          <div class="calc-input-row">
+            <div class="input-head">
+              <label for="sim-cost">Total 1-Acre Cultivation & Curing Cost (₹):</label>
+              <span id="disp-sim-cost" class="val-tag">₹1,70,000</span>
+            </div>
+            <input type="range" id="sim-cost" min="120000" max="220000" step="5000" value="170000" class="custom-range">
+            <button id="toggle-cost-breakdown" class="btn-text-sm">View Itemized Cost Breakdown ▾</button>
+          </div>
+
+          <div id="cost-breakdown-table" class="cost-table-wrapper" style="display: none;">
+            <table class="cost-breakdown-tbl">
+              <tr><td>Land Prep & BBF Formation</td><td>₹7,500</td></tr>
+              <tr><td>Seed Rhizomes (900 kg @ ₹45)</td><td>₹40,500</td></tr>
+              <tr><td>Seed Treatment Chemicals/Bio</td><td>₹1,500</td></tr>
+              <tr><td>FYM (10 t) + Neem Cake (250 kg)</td><td>₹27,500</td></tr>
+              <tr><td>Basal Mineral Fertilizers (SSP, MOP)</td><td>₹5,000</td></tr>
+              <tr><td>Drip Irrigation Share (Amortized)</td><td>₹8,000</td></tr>
+              <tr><td>Mulching Material & Application</td><td>₹7,000</td></tr>
+              <tr><td>Water-Soluble Fertigation Salts</td><td>₹14,500</td></tr>
+              <tr><td>Plant Protection (IPM Bio + Chems)</td><td>₹5,500</td></tr>
+              <tr><td>Labor (Weeding, Earthing up)</td><td>₹18,000</td></tr>
+              <tr><td>Harvesting Labor</td><td>₹14,000</td></tr>
+              <tr><td>Curing, Steam Boiling & Polishing</td><td>₹16,000</td></tr>
+              <tr><td>Gunny Bags & APMC Transport</td><td>₹5,000</td></tr>
+              <tr class="tbl-total"><td>Total Operational Cost</td><td><strong>₹1,70,000</strong></td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- Profit Outputs & Analytics -->
+        <div class="calc-panel-results card-glass">
+          <h3>Profitability Matrix</h3>
+
+          <div class="summary-cards-row">
+            <div class="res-card dry-res">
+              <div class="res-head">
+                <span class="res-badge">Recommended Route</span>
+                <h4>Dry Cured Spice Model</h4>
+              </div>
+              <div class="res-body">
+                <div class="res-metric-item">
+                  <span>Cured Dry Yield:</span>
+                  <strong id="res-dry-yield" class="text-gold">22.8 Quintals</strong>
+                </div>
+                <div class="res-metric-item">
+                  <span>Gross APMC Revenue:</span>
+                  <strong id="res-dry-gross">₹3,07,800</strong>
+                </div>
+                <div class="res-metric-item">
+                  <span>Total Cultivation Cost:</span>
+                  <strong id="res-dry-cost">₹1,70,000</strong>
+                </div>
+                <div class="res-metric-item highlight-box">
+                  <span>NET PROFIT (Dried):</span>
+                  <strong id="res-dry-net" class="text-emerald font-xl">₹1,37,800</strong>
+                </div>
+                <div class="res-sub-stats">
+                  <span>BCR Ratio: <strong id="res-dry-bcr">1.81</strong></span>
+                  <span>Break-Even: <strong id="res-dry-breakeven">12.6 q</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="res-card fresh-res">
+              <div class="res-head">
+                <span class="res-badge-sub">Alternative</span>
+                <h4>Raw Green Rhizome Model</h4>
+              </div>
+              <div class="res-body">
+                <div class="res-metric-item">
+                  <span>Fresh Harvest Sold:</span>
+                  <strong id="res-fresh-sold">12,000 kg</strong>
+                </div>
+                <div class="res-metric-item">
+                  <span>Gross Farmgate Revenue:</span>
+                  <strong id="res-fresh-gross">₹2,64,000</strong>
+                </div>
+                <div class="res-metric-item">
+                  <span>Production Cost (No Curing):</span>
+                  <strong id="res-fresh-cost">₹1,54,000</strong>
+                </div>
+                <div class="res-metric-item highlight-box">
+                  <span>NET PROFIT (Fresh):</span>
+                  <strong id="res-fresh-net" class="text-gold font-xl">₹1,10,000</strong>
+                </div>
+                <div class="res-sub-stats">
+                  <span>BCR Ratio: <strong id="res-fresh-bcr">1.71</strong></span>
+                  <span>Break-Even: <strong id="res-fresh-breakeven">7.0 t</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Value Addition Opportunity -->
+          <div class="value-add-box">
+            <div class="va-header">
+              <span class="va-icon">⭐</span>
+              <div>
+                <strong>Value-Addition Potential (Farmgate Cold-Ground Powder)</strong>
+                <p>Milling 20% of your dry harvest into 250g retail pouches @ ₹350/kg</p>
+              </div>
+            </div>
+            <div class="va-metrics">
+              <div class="va-stat">
+                <span>Value-Add Extra Margin:</span>
+                <strong id="res-va-gain" class="text-green">+ ₹45,600</strong>
+              </div>
+              <div class="va-stat">
+                <span>Combined Blended Net Profit:</span>
+                <strong id="res-blended-net" class="text-emerald">₹1,83,400</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Value-Addition & Market Outlets -->
+    <section class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Section 08</span>
+        <h2>Commercial Marketing Channels & Trade Buyers</h2>
+        <p class="section-desc">Diversifying beyond local middlemen to capture maximum margins across South India.</p>
+      </div>
+
+      <div class="marketing-grid">
+        <div class="mkt-card card-glass">
+          <div class="mkt-icon">🏛️</div>
+          <h3>Primary Mandis (APMC)</h3>
+          <p><strong>Locations:</strong> Erode, Nizamabad, Sangli, Chamarajanagar, Gundlupet.</p>
+          <p><strong>Requirements:</strong> Grade strictly into "Finger" and "Bulb/Gulla". Moisture must be &lt;10%. Never polish with chemical lead chromate or artificial yellow dyes.</p>
+        </div>
+
+        <div class="mkt-card card-glass">
+          <div class="mkt-icon">🧪</div>
+          <h3>Industrial Oleoresin Extractors</h3>
+          <p><strong>Buyers:</strong> Synthite Industries, Arjuna Natural, Plant Lipids.</p>
+          <p><strong>Requirements:</strong> Certified varieties like IISR Prabha or Pragati testing &gt;5.0% curcumin. Commands direct contract farmgate price premiums of ₹1,000–₹1,500/quintal.</p>
+        </div>
+
+        <div class="mkt-card card-glass">
+          <div class="mkt-icon">🌱</div>
+          <h3>Certified Seed-to-Seed Sales</h3>
+          <p><strong>Target:</strong> Neighboring farmers and farmer-producer companies (FPOs).</p>
+          <p><strong>Advantage:</strong> Healthy, disease-free mother and primary finger rhizomes sold at ₹45–₹60/kg in April–May—double the raw commercial market value.</p>
+        </div>
+
+        <div class="mkt-card card-glass">
+          <div class="mkt-icon">📦</div>
+          <h3>D2C Pure Turmeric Powder</h3>
+          <p><strong>Model:</strong> Cold-hammer mill pulverization + Nitrogen-flushed food-grade pouches.</p>
+          <p><strong>Economics:</strong> Retail realization of ₹350–₹500/kg under FSSAI license, yielding net margins exceeding 55% over bulk raw sale.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="brand-logo">
+          <span class="logo-icon">🌿</span>
+          <span class="brand-title">Curcuma<span class="highlight-gold">Master</span></span>
+        </div>
+        <p class="footer-about">
+          A scientific agronomic decision support suite for precision 1-acre turmeric cultivation in Karnataka and South Indian agro-climates. Formulated per ICAR-IISR Kozhikode & UAS recommendations.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Agronomic Standards</h4>
+        <ul class="footer-links">
+          <li><a href="#feasibility">ICAR-IISR Yield Benchmarks</a></li>
+          <li><a href="#varieties">IISR Pragati & Prabha Specifications</a></li>
+          <li><a href="#soil-seed">Broad Raised Bed (BBF) Geometry</a></li>
+          <li><a href="#fertigation">Water-Soluble Drip Fertigation</a></li>
+          <li><a href="#ipdm">Pythium & Shoot Borer IPM</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Farm-Level Protocols</h4>
+        <ul class="footer-links">
+          <li><a href="#profit-calculator">1-Acre Commercial Budget</a></li>
+          <li><a href="#calendar">9-Month Crop Calendar</a></li>
+          <li><a href="#soil-seed">Seed Sett Treatment Protocol</a></li>
+          <li><a href="#profit-calculator">Break-Even Calculator</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 CurcumaMaster Agronomy Suite. Developed for farmers seeking scientific yields and genuine profitability. Yields depend on climate, soil, and management discipline.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
